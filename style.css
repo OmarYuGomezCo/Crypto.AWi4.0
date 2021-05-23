@@ -1,0 +1,87 @@
+/* Ajustes genereales de CSS estilos para darle una imagen agradable al logín */
+
+*{
+  
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+
+}
+body{
+    
+    background-image:url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ 
+ 
+}
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 320px;
+}
+
+#inicio{
+    min-width: 230px;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    backdrop-filter: blur(10px);
+    background-color:rgba(255,255,255,0.5);
+    padding: 25px;
+    border-radius: 9px 9px 0px 9px;
+    
+}
+
+#inicio h1{
+    padding: 10%;
+    
+}
+
+#inicio input{
+    background-color: rgba(235.235.235,0.1);
+    outline: none;
+    border: 0;
+    padding: 5px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#inicio_btn{
+    cursor: pointer;
+    background: linear-gradient(102deg, #FFF5EE 30%, #C0C0C0 70%);
+    display: inline-block;
+    border: 0;
+    text-decoration: none;
+    padding: 5px;
+    box-shadow: 0 0 0 0 rgba(0, 0 , 0, .9);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba (256,256,256, 0.9);
+    }
+    70%{
+        transform: scale(1.05);
+        box-shadow: 0 0 0 25px rgba (256,256,256, 0);
+    }
+    100%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba (256,256,256, 0.9);
+    }
+    
+}
+
+#content{
+    backdrop-filter: blur(10px);
+    background-color:rgba(255,255,255,0.5);
+    padding: 22%;
+}

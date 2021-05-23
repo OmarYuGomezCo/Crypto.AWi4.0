@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Lenguaje del sitio web-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css"> <!-- Se importa el css que le dara la imagen al login -->
+	<script type="text/javascript" src="script.js"></script> <!-- Se importa el script con el que vamos a estar trabajando -->
+	<script type="text/javascript" src="./rollups/aes.js"></script> <!-- Se importa el aes.js que es el que se encarga de manejar el encriptado de la carpeta rollups -->
+	<title>Log in</title>
+</head>
+<body>
+	<main>
+	<div id="inicio">
+		<form name="form">
+			<P>
+				<h1>Iniciar sesión</h1>
+			</P>
+			<p>
+				<!-- Usuario que se va ingresar para trabajar -->
+				<input type="text" name="user" id="user" placeholder=" Usuario ">
+			</p>
+			<p>	
+				<!-- Contraeña con la que se va a trabajar y a encriptar -->
+				<input type="password" name="pass" id="pass" placeholder=" Contraseña ">
+			</p>
+			<p id="cen">
+				<!-- Buton que comprueba el estado de la contrasea y usuario, ademas de encriptar la contraseña si todo esta bien -->
+				<button onclick="ir()" id="inicio_btn"> Iniciar sesión </button>
+			</p>
+			<div>
+				<!-- Apartado para mostrar la contraseña ya encriptada -->
+				<p id ="encriptado" class="encriptado"></p>
+			</div>
+		</form>
+	</div>
+	</main>
+
+</body>
+</html>
